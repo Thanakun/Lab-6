@@ -3,6 +3,21 @@ using namespace std;
 
 char before(char x){
 	//Write your function definition here
+	
+	if(x == 'A'){
+		x = '[';
+	}
+
+	if(x > 64 && x <= 91 ){
+		x = x-1;
+		return  x;
+	}else{
+		x = 48;
+		return  x;
+	}
+	
+	
+	return 0;
 }
 
 int main(){
